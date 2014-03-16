@@ -8,7 +8,7 @@ Config { bgColor = "black"
                       , Run Memory ["-t","<fc=LightBlue>Mem</fc>: <usedratio>%","-L","50","-H","80","--normal","green","--high","red"] 60
                       , Run Swap ["-t","<fc=LightBlue>Swap</fc>: <usedratio>","-p","2","-S","True"] 600
                       , Run DiskU [("/", "<fc=LightBlue>sdb1</fc>: <used>/<size>"), ("sdb1", "<usedbar>")] ["-L", "20", "-H", "50", "-m", "1", "-p", "3"] 20
-                      , Run Battery ["-L","20","-H","80","--low","red","--normal","green"] 20
+                      , Run BatteryP ["BAT0","BAT1","BAT2"] ["-t","<fc=LightBlue>Batt</fc>: AC <acstatus>, <watts>, <left>, <timeleft>","-S","True","-L","20","-H","80","--low","red","--normal","green"] 20
                       , Run Date "%a %b %_d %k:%M" "date" 20
                       , Run StdinReader
                       ]
