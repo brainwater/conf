@@ -1,4 +1,5 @@
-Config { bgColor = "black"
+Config { font="xft:DejaVu Sans Mono:size=9:antialias=true:hinting=hintfull"
+       , bgColor = "black"
        , fgColor = "grey"
        , position = Top
        , lowerOnStart = True
