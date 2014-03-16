@@ -1,4 +1,4 @@
-Config { font="xft:DejaVu Sans Mono:size=9:antialias=true:hinting=hintfull"
+Config { font="xft:DejaVu Sans Mono:size=8:antialias=true:hinting=hintfull:lcdfilter=lcddefault:rgba=rgb"
        , bgColor = "black"
        , fgColor = "grey"
        , position = Top
