@@ -3,7 +3,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Layout.NoBorders
 import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Util.EZConfig(additionalKeys,additionalKeysP)
 import System.IO
 
 main = do
@@ -20,4 +20,8 @@ main = do
      , modMask = mod4Mask     -- Rebind Mod (default Alt) to Windows key
      } `additionalKeys`
      [ ((mod4Mask, xK_z), spawn "xscreensaver-command -lock")
+     ] `additionalKeysP`
+     [ ("M-a e", spawn "emacs"),
+       ("M-a g", spawn "chromium-browser"),
+       ("M-a c", spawn "galculator")
      ]
