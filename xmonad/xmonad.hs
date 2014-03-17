@@ -8,7 +8,7 @@ import System.IO
 
 main = do
   xmproc <- spawnPipe "xmobar"
-  spawn "bash ${HOME}/.xmonad/autostart.bash"
+  spawn "bash ${HOME}/conf/xmonad/autostart.bash"
   spawn "xscreensaver -no-splash"
   spawn "xmodmap ${HOME}/conf/xmodmap/Xmodmap"
   xmonad $ defaultConfig

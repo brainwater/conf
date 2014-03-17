@@ -1,0 +1,10 @@
+# Dot file list of repository path then linkname where it is used assuming home is prefixed to it, separated by one space
+# First argument will be prefixed by the path to the repo, second will be prefixed with the home directory
+bash/bashrc.bash .bashrc
+gtk/gtkrc-2.0 .gtkrc-2.0
+xmobar/xmobarrc.hs .xmobarrc
+xmodmap/Xmodmap .Xmodmap
+xmonad/xmonad.hs .xmonad/xmonad.hs
+xmonad/autostart.bash .xmonad/autostart.bash
+xdefaults/Xdefaults .Xdefaults
+xdefaults/Xresources .Xresources
