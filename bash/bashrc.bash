@@ -125,6 +125,8 @@ alias myfind='find -regex'
 
 alias mgs='git status'
 alias mgh='git help'
+alias mgd='git diff'
+alias mga='git add --all .'
 
 # apt related aliases
 # prefix apt aliases with ma

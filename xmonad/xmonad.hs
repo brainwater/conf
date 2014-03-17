@@ -10,7 +10,7 @@ main = do
   xmproc <- spawnPipe "xmobar"
   spawn "bash ${HOME}/.xmonad/autostart.bash"
   spawn "xscreensaver -no-splash"
-  spawn "xmodmap ~/.Xmodmap"
+  spawn "xmodmap ${HOME}/conf/xmodmap/Xmodmap"
   xmonad $ defaultConfig
      { manageHook = manageDocks <+> manageHook defaultConfig
      , layoutHook = avoidStruts $ smartBorders $  layoutHook defaultConfig
