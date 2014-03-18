@@ -1,7 +1,7 @@
 Config { font="xft:DejaVu Sans Mono:size=8:antialias=true:hinting=hintfull:lcdfilter=lcddefault:rgba=rgb"
        , bgColor = "black"
        , fgColor = "grey"
-       , position = Top
+       , position = TopW L 90
        , lowerOnStart = True
        , commands = [ Run Weather "KPDK" ["-t","<station>: <tempF>°F, <skyCondition>","-S","True","-p","2","-L","45","-H","75","--normal","green","--high","red","--low","lightblue"] 600
                       , Run Cpu ["-t","<fc=LightBlue>Cpu</fc>: <total>","-S","True","-p","2","-L","10","-H","50","--normal","green","--high","red"] 20

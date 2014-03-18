@@ -11,6 +11,7 @@ main = do
   spawn "bash ${HOME}/conf/xmonad/autostart.bash"
   spawn "xscreensaver -no-splash"
   spawn "xmodmap ${HOME}/conf/xmodmap/Xmodmap"
+  spawn "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint 0x191970 --height 16"
   xmonad $ defaultConfig
      { manageHook = manageDocks <+> manageHook defaultConfig
      , layoutHook = avoidStruts $ smartBorders $  layoutHook defaultConfig
